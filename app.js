@@ -5,6 +5,11 @@ const shortid = require('shortid');
 
 const app = express();
 const server = require('http').Server(app);
+
+app.get('/healthz', (req, res) => {
+  res.send('Success')
+})
+
 const io = require('socket.io')(server, {
   cors: {
     origin: ['https://vaadakekoos.web.app', 'vaadakekoos.firebaseapp.com', 'http://localhost:3000'],

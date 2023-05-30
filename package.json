@@ -4,7 +4,7 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "14.9"
+    "node": "16.17.1"
   },
   "scripts": {
     "deploy": "gcloud app deploy",
