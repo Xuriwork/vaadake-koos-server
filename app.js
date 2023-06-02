@@ -92,7 +92,7 @@ const io = require('socket.io')(server, {
 });
 
 app.use(express.static(__dirname + '/../../build'));
-app.use(cors(corsOptions));
+//app.use(cors(corsOptions));
 
 const requestIsNotFromHost = (socket) => {
 	const room = getRoomByName(socket.roomName);
