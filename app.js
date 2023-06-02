@@ -63,7 +63,7 @@ const corsOptions = {
 		} else {
 			const errorObject = {
 				message: 'Not allowed by CORS',
-				origin,
+				origin: String(origin),
 				indexOf: origins.indexOf(origin),
 			};
 			callback(new Error(JSON.stringify(errorObject)));
