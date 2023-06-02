@@ -3,9 +3,6 @@
   "description": "Socket.io Server for Vaadake Koos",
   "version": "0.0.1",
   "private": true,
-  "engines": {
-    "node": "16.17.1"
-  },
   "scripts": {
     "deploy": "gcloud app deploy",
     "start": "node app.js",
