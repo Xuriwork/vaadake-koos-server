@@ -74,7 +74,7 @@ const corsOptions = {
 const app = express();
 const server = require('http').Server(app);
 
-app.get('/healthz', (req, res) => {
+app.get('/api/healthz', (req, res) => {
 	res.send('Success');
 });
 
